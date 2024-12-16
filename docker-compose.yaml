@@ -1,0 +1,9 @@
+services:
+  bot: 
+    build: .
+    env_file: 
+      - .env
+    environment:
+      - PROJECT_ROOT=/bot
+    ports:
+      - "8080:8080"
